@@ -63,11 +63,13 @@ AppAsset::register($this);
                                         </li>
                                         <li><a href="<?= Yii::$app->homeUrl.'file' ?>">Quan ly anh</a>
                                         </li>
-                                        <li><a href="form_wizards.html">Form Wizard</a>
+                                        <li><a href="<?= Yii::$app->homeUrl.'testing/food' ?>">Testing Ajax dropdownlist</a>
                                         </li>
-                                        <li><a href="form_upload.html">Form Upload</a>
+                                        <li><a href="<?= Yii::$app->homeUrl.'testing/countries' ?>">Countries</a>
                                         </li>
-                                        <li><a href="form_buttons.html">Form Buttons</a>
+                                        <li><a href="<?= Yii::$app->homeUrl.'testing/states' ?>">States</a>
+                                        </li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'testing/cities' ?>">Cities</a>
                                         </li>
                                     </ul>
                                 </li>
