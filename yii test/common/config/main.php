@@ -10,5 +10,8 @@ return [
         'groups' => [
             'class' => 'common\modules\groups\Module',
         ],
+        'testing' => [
+            'class' => 'common\modules\testing\Module',
+        ],
     ],
 ];
