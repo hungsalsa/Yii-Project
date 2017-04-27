@@ -44,4 +44,18 @@ class Cities extends \yii\db\ActiveRecord
             'state_id' => 'State ID',
         ];
     }
+
+    public static function dropdown(){
+        // get and cache data
+        static $dropdown;
+        if($dropdown==null){
+            // get all records from database and generate
+            $models = static::find()->all();
+            foreach ($models as $model) {
+                $dropdown[$model->id]=$model->name;
+            }
+        }
+
+        return $dropdown;
+    }
 }
