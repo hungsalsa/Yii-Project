@@ -18,9 +18,6 @@ return [
             'class' => 'app\modules\groups\Module',
             ],
         ],
-        'testing' => [
-            'class' => 'app\modules\testing\Module',
-        ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
