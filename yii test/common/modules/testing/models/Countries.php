@@ -1,7 +1,7 @@
 <?php
 
 namespace common\modules\testing\models;
-
+use yii\helpers\ArrayHelper;
 use Yii;
 
 /**
@@ -48,17 +48,10 @@ class Countries extends \yii\db\ActiveRecord
         ];
     }
 
-    public static function dropdown(){
+    public function getAll_Countries(){
         // get and cache data
-        static $dropdown;
-        if($dropdown==null){
-            // get all records from database and generate
-            $models = static::find()->all();
-            foreach ($models as $model) {
-                $dropdown[$model->id]=$model->name;
-            }
-        }
+        $countries = ArrayHelper::map(Countries::find()->orderBy('name')->all(),'id', 'name');
 
-        return $dropdown;
+        return $countries;
     }
 }

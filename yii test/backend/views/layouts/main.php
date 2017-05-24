@@ -71,6 +71,12 @@ AppAsset::register($this);
                                         </li>
                                         <li><a href="<?= Yii::$app->homeUrl.'testing/cities' ?>">Cities</a>
                                         </li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'company' ?>">Company</a>
+                                        </li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'branch' ?>">Branch</a>
+                                        </li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'departments' ?>">Departments</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>

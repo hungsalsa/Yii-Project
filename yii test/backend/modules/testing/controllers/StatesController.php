@@ -113,6 +113,22 @@ class StatesController extends Controller
      * @return States the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
+
+     public function actionLists($id)
+    {
+        $countStates = States::find()->where(['country_id'=>$id])->count();
+
+        $States = States::find()->where(['country_id'=>$id])->all();
+
+        if ($countStates>0) {
+            foreach ($States as $State) {
+                echo "<option value='".$State->id."'>".$State->name."</option>";
+            }
+        } else {
+            echo "<option>-----</option>";
+        }
+    }
+
     protected function findModel($id)
     {
         if (($model = States::findOne($id)) !== null) {

@@ -5,9 +5,14 @@ namespace app\modules\testing\controllers;
 use Yii;
 use common\modules\testing\models\Food;
 use common\modules\testing\models\FoodSearch;
+use common\modules\testing\models\Countries;
+use common\modules\testing\models\States;
+use common\modules\testing\models\Cities;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+
+
 
 /**
  * FoodController implements the CRUD actions for Food model.
@@ -65,11 +70,20 @@ class FoodController extends Controller
     {
         $model = new Food();
 
+        $countries = new Countries();
+
+        $allCountries = $countries->getAll_Countries();
+
+        $states = new States();
+
+        // $allStates = $states->getAll_Countries();
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'allCountries' => $allCountries,
             ]);
         }
     }
@@ -104,6 +118,21 @@ class FoodController extends Controller
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+    }
+
+    public function actionList_states($id){
+        // count
+        $countstates = States::find()->where(['country_id'=>$id])->count();
+        $states = States::find()->where(['country_id'=>$id])->orderBy('name DESC')->all();
+        if ($countstates>0) {
+            foreach ($states as $value) {
+                echo "<option value='".$value->id."'>".$value->name."</option>";
+            }
+        } else {
+            echo "<option>-- chon country--</option>";
+        }
+        
+
     }
 
     /**
