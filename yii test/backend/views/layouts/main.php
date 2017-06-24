@@ -56,27 +56,19 @@ AppAsset::register($this);
                                 </li>
                                 <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="<?= Yii::$app->homeUrl.'group' ?>">Nhóm danh mục</a>
-                                        <li><a href="<?= Yii::$app->homeUrl.'category' ?>">Danh mục</a>
+                                        
+                                        
+                                        <li><a href="<?= Yii::$app->homeUrl.'stock/export' ?>">Xuất hàng ngày</a></li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'stock/order' ?>">Xuất cho ĐV</a></li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'stock/product' ?>">San pham</a>
+                                       <li><a href="<?= Yii::$app->homeUrl.'stock/employee' ?>">Quản lý nhân viên</a></li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'stock/suppliers' ?>">Nhà cung cấp</a></li>
+                                        <li><a href="<?= Yii::$app->homeUrl.'stock/customer' ?>">Khách hàng</a></li>
+                                        
                                         </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'product' ?>">San pham</a>
+                                        <li><a href="form_wizards.html">Form Wizard</a>
                                         </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'file' ?>">Quan ly anh</a>
-                                        </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'testing/food' ?>">Testing Ajax dropdownlist</a>
-                                        </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'testing/countries' ?>">Countries</a>
-                                        </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'testing/states' ?>">States</a>
-                                        </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'testing/cities' ?>">Cities</a>
-                                        </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'company' ?>">Company</a>
-                                        </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'branch' ?>">Branch</a>
-                                        </li>
-                                        <li><a href="<?= Yii::$app->homeUrl.'departments' ?>">Departments</a>
-                                        </li>
+                                        
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>

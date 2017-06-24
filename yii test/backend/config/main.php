@@ -16,16 +16,14 @@ return [
     'modules' => [
         'groups' => [
             'class' => 'app\modules\groups\Module',
-            ],
-        'testing' => [
-            'class' => 'app\modules\testing\Module',
-            ],
         ],
-        
+        'stock' => [
+            'class' => 'backend\modules\manager\stock',
+        ],
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
-             // 'baseUrl' => ' https://mydomainname.com/site',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
