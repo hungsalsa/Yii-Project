@@ -69,7 +69,7 @@ class CategoryController extends Controller
         $model = new Category();
         $group = new Group();
         $dataGroup = ArrayHelper::map($group->getAllGroup(),'idGroups','groupsName');
-        
+
 
         $dataCat = $model->getCategoryParent();
         if(empty($dataCat)){
@@ -79,7 +79,7 @@ class CategoryController extends Controller
         $time = time();
         $model->created_at = $time;
         $model->updated_at = $time;
-        
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect('index');
         } else {
