@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-06-29 13:20:02
+Date: 2017-06-25 18:10:47
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -70,18 +70,11 @@ CREATE TABLE `tbl_cudan` (
   `created` date DEFAULT NULL,
   `updated` date DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tbl_cudan
 -- ----------------------------
-INSERT INTO `tbl_cudan` VALUES ('1', 'HĐ số 28 ', '2607B', ' Ngô Xuân Trường', 'https://www.facebook.com/truong.ngoxuan.7?fref=ufi', '1', 'xuantruong@gmail.com', '123454', '0989898976', 'http://helios-member.vn/uploads/Anh%20cu%20dan/ngo%20xuan%20truong.jpg', '<p>Anh n&agrave;y được đấy</p>', null, '2017-06-28', '2017-06-28');
-INSERT INTO `tbl_cudan` VALUES ('2', 'So hop dong 608', '1504B', ' Le Van Linh', 'https://www.facebook.com/le.linh.12914?fref=ufi', '1', '', '123454', '', 'http://helios-member.vn/uploads/Anh%20cu%20dan/Le%20Van%20Linh.jpg', '', null, '2017-06-28', '2017-06-28');
-INSERT INTO `tbl_cudan` VALUES ('3', 'HD626', '3104B', 'Nguyễn Hữu Phẩm', 'https://www.facebook.com/nguyenthaithach?fref=ufi', '1', '', '123454', '', 'http://helios-member.vn/uploads/Anh%20cu%20dan/3003A.jpg', '', null, '2017-06-28', '2017-06-28');
-INSERT INTO `tbl_cudan` VALUES ('4', 'HĐ662', '3104B', 'Bùi Mạnh Linh', 'https://www.facebook.com/linhbm?fref=ufi', '1', '', '123454', '', 'http://helios-member.vn/uploads/Anh%20cu%20dan/linh%20mini.jpg', '', null, '2017-06-28', '2017-06-28');
-INSERT INTO `tbl_cudan` VALUES ('8', '', '3104B', 'Nguyễn Thị Hương Giang', 'https://www.facebook.com/linhnhi261002?fref=ufi', '1', '', '123454', '', 'http://helios-member.vn/uploads/Anh%20cu%20dan/linh%20nhi.jpg', '', '', '2017-06-28', '2017-06-28');
-INSERT INTO `tbl_cudan` VALUES ('9', '', '3104B', 'Nguyễn Mạnh Hoàng', 'https://stackoverflow.com/questions/35245507/yii2-activeform-field-placeholder', '0', '', '123454', '', '', '', '', '2017-06-28', '2017-06-28');
-INSERT INTO `tbl_cudan` VALUES ('10', '', '3104B', 'Hoàng Lão Tà123', 'https://www.facebook.com/ha.tran.5243817?fref=ufi', '1', '', '123454', '', '', '', '', '2017-06-28', '2017-06-28');
 
 -- ----------------------------
 -- Table structure for tbl_cudan_fail
