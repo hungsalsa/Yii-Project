@@ -13,12 +13,6 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'modules' => [
-        'boundaries' => [
-            'class' => 'app\modules\boundaries\boundaries',
-        ],
-        
-    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -55,7 +49,6 @@ return [
             'rules' => [
             ],
         ],
-        
     ],
     'params' => $params,
 ];
